@@ -6,3 +6,60 @@
     font-style: normal;
     font-display: swap;
 }
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width:40%;
+    background-size: 100% 100%;
+    background-image: url('/resources/plant-image-big.jpg');
+    position: relative;
+}
+
+.sidebar >div:nth-child(1),
+.logo {
+    height: 25vh;
+}
+
+.sidebar > div:nth-child(1) {
+    background-color: black;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    top:20vh;
+}
+
+.logo {
+    position:absolute;
+    display: flex;
+    color:white;
+    top:21vh;   
+    width: 100%;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    height: 90px;
+    margin-left: auto;
+}
+
+.logo h2{
+    font-family: 'Norse', 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    margin: auto auto auto 0;
+}
+
+.form-container{
+    width: 60%;  
+}
