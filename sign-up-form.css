@@ -18,6 +18,8 @@
 body {
     display: flex;
     height: 100vh;
+    font-family: "Inter", "Roboto", "Open Sans", Arial, sans-serif;
+    color:#212121
 }
 
 .sidebar {
@@ -29,7 +31,7 @@ body {
 
 .sidebar >div:nth-child(1),
 .logo {
-    height: 25vh;
+    height: clamp(50px,20vh,200px);
 }
 
 .sidebar > div:nth-child(1) {
@@ -49,17 +51,78 @@ body {
 }
 
 .logo img {
-    width: 80px;
-    height: 90px;
+    width: clamp(50px,15vh,130px);
+    height: clamp(45px,17vh,140px);
     margin-left: auto;
 }
 
 .logo h2{
     font-family: 'Norse', 'Times New Roman', Times, serif;
-    font-size: 5rem;
+    font-size: clamp(20px,15vh,120px);
     margin: auto auto auto 0;
 }
 
 .form-container{
     width: 60%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f8f8f8;
+}
+
+.form-container > p,
+form h2{
+    padding:1rem 3rem;
+}
+
+p:first-of-type{
+    font-size: clamp(1rem, 2.8vh, 1.8rem);
+    padding-right: 20vh;
+    font-weight: 550;
+}
+
+
+
+p:last-of-type {
+    
+}
+
+label,
+form h2{
+    color:#555555;
+    font-weight: 550;
+}
+
+form h2{
+    font-size: clamp(1.5rem, 3.5vh, 1.8rem);
+}
+
+label {
+    font-size:clamp(0.7rem, 1.7vh, 1rem);
+    display: block;
+}
+
+fieldset{
+    box-shadow: 2px;
+    box-shadow: 0 4px 2px -2px rgb(217, 217, 217);
+    background-color: white;
+    padding-bottom: 1.2rem;
+}
+
+
+form div {
+    display: flex;
+    justify-content: start;
+}
+
+fieldset >div > p {
+    padding-left: 3rem;
+}
+
+input {
+    border:1px solid;
+    border-radius: 2px;
+    padding:3px;
+    border-color: #E5E7EB;
+    width: clamp(80px, 25vh,300px);
 }
