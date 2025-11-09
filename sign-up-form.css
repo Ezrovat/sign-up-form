@@ -23,7 +23,7 @@ body {
 }
 
 .sidebar {
-    width:40%;
+    width:35%;
     background-size: 100% 100%;
     background-image: url('/resources/plant-image-big.jpg');
     position: relative;
@@ -63,7 +63,7 @@ body {
 }
 
 .form-container{
-    width: 60%;  
+    width: 65%;  
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -75,7 +75,7 @@ form h2{
     padding:1rem 3rem;
 }
 
-p:first-of-type{
+.form-container > p{
     font-size: clamp(1rem, 2.8vh, 1.8rem);
     padding-right: 20vh;
     font-weight: 550;
@@ -102,6 +102,7 @@ label {
     display: block;
 }
 
+
 fieldset{
     box-shadow: 2px;
     box-shadow: 0 4px 2px -2px rgb(217, 217, 217);
@@ -110,7 +111,7 @@ fieldset{
 }
 
 
-form div {
+fieldset div {
     display: flex;
     justify-content: start;
 }
@@ -124,5 +125,49 @@ input {
     border-radius: 2px;
     padding:3px;
     border-color: #E5E7EB;
-    width: clamp(80px, 25vh,300px);
+    width: clamp(80px, 25vh,200px);
 }
+
+.submit-container {
+    margin:35px 0 0 30px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+
+}
+
+button,
+a {
+    font-weight: 550;
+}
+
+a {
+    color:#596D48;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #3c4733;
+}
+
+input:invalid:required{
+    outline: none;
+}
+
+input:focus{
+    outline:1px solid rgb(63, 145, 239);
+    box-shadow: rgb(82, 82, 82) 1px 1px 1px 1px;
+}
+
+input:invalid {
+    outline:1px solid red;
+}
+
+

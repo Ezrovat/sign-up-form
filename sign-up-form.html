@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign-up-form.css">
+    <script src="sign-up-form.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -17,49 +18,52 @@
 
     <div class="form-container">
         <p>This is not a real online service! You know you need something like this in 
-            your life to hel you realize your deepest dreams. <br>
+            your life to help you realize your deepest dreams. <br>
             Sign up <span>now</span> to get started. <br> <br>
             You <span>know</span> you want to.
         </p>
         <form action="#">
-            
+
             <fieldset>
                 <h2>Lets do this</h2>
                 <div>
                     <p>
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" name="first_name" requred>
+                        <input type="text" id="first_name" name="first_name" required>
                     </p>
                     <p>
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="last_name" requred>
+                        <input type="text" id="last_name" name="last_name" required>
                     </p>
                 </div>
                 <div>
                     <p>
                         <label for="email">EMAIL</label>
-                        <input type="text" id="email" name="email" requred>
+                        <input type="email" id="email" name="email" required>
                     </p>
                     <p>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="text" id="phone" name="phone" requred>
+                        <input type="text" id="phone" name="phone" required>
                     </p>
                 </div>
                 <div>
                     <p>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" >
                     </p>
                     <p>
                         <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_password">
+                        <input type="password" id="confirm_password" >
                     </p>
                 </div>
             </fieldset>
-            <button type="submit">Create Account</button>
+            <div class="submit-container">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </form>
             
-        <p>Already have an account? <a href="">Log in</a></p>
+        
     </div>
 </body>
 </html>
